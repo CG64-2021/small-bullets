@@ -4,7 +4,7 @@
 #include <string.h>
 #include <time.h>
 #include <SDL.h>
-#include <SDL_image.h>
+//#include <SDL_image.h>
 
 #include "m_utils.h"
 #include "object.h"
@@ -25,7 +25,7 @@ void init()
 	SDL_Init(SDL_INIT_VIDEO);
 	window = SDL_CreateWindow("Small Bullets", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREENWIDTH, SCREENHEIGHT, SDL_WINDOW_SHOWN);
 	renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
-	IMG_Init(IMG_INIT_PNG);
+	//IMG_Init(IMG_INIT_PNG);
 }
 
 void input()
